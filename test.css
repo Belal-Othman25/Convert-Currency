@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.currency-container{
+    background-color: #acaaaa;
+    padding: 20px;
+    margin: 40px auto; 
+    max-width: 800px;
+
+}
+.currency-container .currency{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 10px;
+    padding-top: 20px;
+}
+.currency-container .currency div{
+background-color:#fff;
+padding: 10px;
+border-bottom: 1px solid black;
+margin-bottom: 5px;
+display: flex;
+justify-content: space-between;
+}
+.currency-container .slection{
+    display: flex;
+    margin: 10px;
+}
+.currency-container .slection select,
+.currency-container .slection .amount{
+width: 50%;
+margin: 5px;
+padding: 5px;
+border: none;
+border-radius: 10px;
+font-size: 16px;
+outline: none;
+}
+.currency-container .from,
+.currency-container .to:focus{
+    outline: none;
+    cursor: pointer;
+}
+.currency-container #convert{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0 138 255);
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color .3s ease, color .3s ease;
+}
+.currency-container #convert:hover{
+    background-color: #4caf50;
+    color: white;
+}
+.currency-container #notifcation{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.result-container{
+    display: flex;
+    justify-content: space-between;
+}
+.result-container .result{
+    margin: 7px;
+}

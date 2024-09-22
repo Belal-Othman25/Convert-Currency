@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<h1>Currency Convert Application</h1>
+<div class="currency-container">
+  <div class="currency">
+    <div id="usd">Loading...</div>
+    <div id="eur">Loading...</div>
+    <div id="sar">Loading...</div>
+    <div id="kwd">Loading...</div>
+    <div id="cny">Loading...</div>
+    <div id="aed">Loading...</div>
+  </div>  
+ <div class="slection">
+  <select class="from">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="EGP">EGP</option>
+    <option value="KWD">KWD</option>
+    <option value="GBP">GBP</option>
+  </select>
+  <input type="number" class="amount" placeholder="Amount">
+  <select class="to">
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+    <option value="EGP">EGP</option>
+    <option value="KWD">KWD</option>
+    <option value="GBP">GBP</option>
+  </select>
+ </div>
+ <div class="result-container">
+  <h2>Converted Amount:</h2>
+  <div class="result">--</div>
+</div>
+
+
+  <button id="convert" onclick="convertCurrency()">Convert</button>
+  <div id="notifcation" class="popup" style="display: none;">Conversion Successful</div>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
